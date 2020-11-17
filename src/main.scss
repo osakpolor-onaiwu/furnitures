@@ -1,0 +1,23 @@
+@import './scss/abstract/mixin';
+@import './scss/abstract/placehold';
+@import './scss/abstract/variables';
+@import './scss/layout/navbar';
+@import './scss/pages/homepageDesktop';
+@import './scss/pages/homepageMobile';
+@import './scss/pages/homepageTab';
+@import './scss/pages/homepageSmallTab';
+@import './scss/layout/footer';
+
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+html,body{
+    margin: 0px;
+    font-family: 'Spartan', sans-serif;
+    height: 100%;
+}
+
+
