@@ -5,6 +5,8 @@ import rightarrow from '../images/icon-angle-right.svg'
 import leftarrow from '../images/icon-angle-left.svg'
 
 export default function Slide3({moveleft,moveright}) {
+     // moveleft and moveright fuctions are recevied as props from the main component
+    //slide1 and slide2 are sent as argument to the moveright and moveleft functions
     return (
             <section id='section1'>
                     <div id='diva' className='A3'>

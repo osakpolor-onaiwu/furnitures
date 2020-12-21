@@ -10,19 +10,20 @@ export default class Main extends Component {
         show:'slide1'
     }
 
+    // this helps to switch slides forward on click of the arrow forward icons
     moveright=(slide)=>{
         if(slide==='slide2'){
             this.setState({
                 ...this.state,
                 show:'slide2'
             })
-          
+
         } if(slide==='slide3'){
             this.setState({
                 ...this.state,
                 show:'slide3'
             })
-          
+
         }else if(slide==='slide1'){
             this.setState({
                 ...this.state,
@@ -31,20 +32,20 @@ export default class Main extends Component {
         }
     }
 
-
+    // this helps to switch slides backwords on click of the arrow backward icons
     moveleft=(slide)=>{
         if(slide==='slide2'){
             this.setState({
                 ...this.state,
                 show:'slide2'
             })
-          
+
         } if(slide==='slide3'){
             this.setState({
                 ...this.state,
                 show:'slide3'
             })
-          
+
         }else if(slide==='slide1'){
             this.setState({
                 ...this.state,
@@ -64,7 +65,7 @@ export default class Main extends Component {
                 break;
             case 'slide3':
                 topSection=  <Slide3 moveright={this.moveright} moveleft={this.moveleft}/>
-        
+
             default:
                 break;
         }
@@ -76,14 +77,14 @@ export default class Main extends Component {
                     <div className='C'></div>
                     <div className='D'>
                         <h4>ABOUT OUR FURNITURE</h4>
-                        <p>         
+                        <p>
                         Our multifunctional collection blends design and function
                         to suit your individual taste.
                         Make each room unique, or pick a cohesive theme that
                         best express your interests and what
                         inspires you. Find the furniture pieces you need,
                         from traditional to contemporary styles
-                        or anything in between. Product specialists are 
+                        or anything in between. Product specialists are
                         available to help you create your dream space.
                         </p>
                     </div>
@@ -94,4 +95,3 @@ export default class Main extends Component {
         )
     }
 }
-
